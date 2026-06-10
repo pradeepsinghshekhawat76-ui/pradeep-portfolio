@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pradeep Singh | Graphic Designer & Video Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">Pradeep<span>.</span></a>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">Graphic Designer & Video Editor</p>
+        <h1>Pradeep Singh</h1>
+        <p class="hero-text">I create scroll-stopping graphics, cinematic edits, motion visuals and VFX-led content for brands, creators and businesses.</p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn primary">View My Work</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="avatar-placeholder">PS</div>
+        <div class="glow"></div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-title">
+        <p>What I Do</p>
+        <h2>Creative Services</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><span>01</span><h3>Motion Designer</h3><p>Dynamic animated visuals, typography, reels, ads and brand motion content.</p></article>
+        <article class="card"><span>02</span><h3>VFX Designer</h3><p>Cinematic effects, compositing, cleanup and impactful visual storytelling.</p></article>
+        <article class="card"><span>03</span><h3>Graphic Designer</h3><p>Social media creatives, posters, branding layouts and marketing designs.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div>
+        <p class="eyebrow">Experienced Creative Mind</p>
+        <h2>Designing visuals that build attention and trust.</h2>
+        <p>I help brands communicate clearly with strong design, smooth editing and engaging visual content. My focus is clean layouts, premium presentation and content that performs on social media.</p>
+      </div>
+      <div class="info-box">
+        <p><b>Residence:</b> India</p>
+        <p><b>Role:</b> Graphic Designer & Video Editor</p>
+        <p><b>Email:</b> yourmail@example.com</p>
+        <p><b>Phone:</b> +91-XXXXXXXXXX</p>
+      </div>
+    </section>
+
+    <section class="section skills-section">
+      <div class="section-title">
+        <p>My Skills</p>
+        <h2>Software Expertise</h2>
+      </div>
+      <div class="skills">
+        <div class="skill"><span>Adobe Photoshop</span><b>90%</b><div><i style="width:90%"></i></div></div>
+        <div class="skill"><span>Adobe Illustrator</span><b>85%</b><div><i style="width:85%"></i></div></div>
+        <div class="skill"><span>CapCut</span><b>90%</b><div><i style="width:90%"></i></div></div>
+        <div class="skill"><span>Adobe After Effects</span><b>85%</b><div><i style="width:85%"></i></div></div>
+        <div class="skill"><span>Premiere Pro</span><b>88%</b><div><i style="width:88%"></i></div></div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="section-title">
+        <p>Portfolio</p>
+        <h2>Selected Works</h2>
+      </div>
+      <div class="portfolio-grid">
+        <button class="work" type="button" onclick="openGallery('social')">
+          <span>Social Media Design</span>
+          <small>Click to view 5 works</small>
+        </button>
+        <button class="work" type="button" onclick="openGallery('motion')">
+          <span>Motion Graphics</span>
+          <small>Click to view 5 works</small>
+        </button>
+        <button class="work" type="button" onclick="openGallery('video')">
+          <span>Video Editing</span>
+          <small>Click to view 5 works</small>
+        </button>
+        <button class="work" type="button" onclick="openGallery('vfx')">
+          <span>VFX Compositing</span>
+          <small>Click to view 5 works</small>
+        </button>
+        <button class="work" type="button" onclick="openGallery('realestate')">
+          <span>Real Estate Ads</span>
+          <small>Click to view 5 works</small>
+        </button>
+        <button class="work" type="button" onclick="openGallery('brand')">
+          <span>Brand Creatives</span>
+          <small>Click to view 5 works</small>
+        </button>
+      </div>
+
+      <div id="galleryModal" class="gallery-modal" aria-hidden="true">
+        <div class="gallery-popup">
+          <button class="close-gallery" type="button" onclick="closeGallery()">&times;</button>
+          <div class="gallery-head">
+            <p>Portfolio Gallery</p>
+            <h3 id="galleryTitle">Selected Works</h3>
+          </div>
+          <div id="galleryImages" class="gallery-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="section-title">
+        <p>FAQ</p>
+        <h2>Common Questions</h2>
+      </div>
+      <details open><summary>What type of projects do you handle?</summary><p>Social media posts, reels, ads, promotional videos, motion graphics and VFX work.</p></details>
+      <details><summary>Do you work with brands and agencies?</summary><p>Yes, I can work with businesses, creators, startups and marketing agencies.</p></details>
+      <details><summary>Can you deliver fast?</summary><p>Yes, depending on project size and content requirements.</p></details>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div>
+        <p class="eyebrow">Contact Me</p>
+        <h2>Let’s create something impactful.</h2>
+        <p>Share your design or video requirement and I’ll help you create premium visual content.</p>
+      </div>
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Tell me about your project"></textarea>
+        <button type="button" class="btn primary">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 Pradeep Singh. All Rights Reserved.</footer>
+  <script>
+    const galleries = {
+      social: {
+        title: 'Social Media Design',
+        images: ['images/social-media-1.svg','images/social-media-2.svg','images/social-media-3.svg','images/social-media-4.svg','images/social-media-5.svg']
+      },
+      motion: {
+        title: 'Motion Graphics',
+        images: ['images/motion-graphics-1.svg','images/motion-graphics-2.svg','images/motion-graphics-3.svg','images/motion-graphics-4.svg','images/motion-graphics-5.svg']
+      },
+      video: {
+        title: 'Video Editing',
+        images: ['images/video-editing-1.svg','images/video-editing-2.svg','images/video-editing-3.svg','images/video-editing-4.svg','images/video-editing-5.svg']
+      },
+      vfx: {
+        title: 'VFX Compositing',
+        images: ['images/vfx-1.svg','images/vfx-2.svg','images/vfx-3.svg','images/vfx-4.svg','images/vfx-5.svg']
+      },
+      realestate: {
+        title: 'Real Estate Ads',
+        images: ['images/real-estate-1.svg','images/real-estate-2.svg','images/real-estate-3.svg','images/real-estate-4.svg','images/real-estate-5.svg']
+      },
+      brand: {
+        title: 'Brand Creatives',
+        images: ['images/brand-creatives-1.svg','images/brand-creatives-2.svg','images/brand-creatives-3.svg','images/brand-creatives-4.svg','images/brand-creatives-5.svg']
+      }
+    };
+
+    function openGallery(type) {
+      const gallery = galleries[type];
+      const box = document.getElementById('galleryImages');
+      document.getElementById('galleryTitle').textContent = gallery.title;
+      box.innerHTML = gallery.images.map((img, index) => `
+        <figure class="gallery-item">
+          <img src="${img}" alt="${gallery.title} work ${index + 1}">
+        </figure>
+      `).join('');
+      const modal = document.getElementById('galleryModal');
+      modal.style.display = 'flex';
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+    }
+
+    function closeGallery() {
+      const modal = document.getElementById('galleryModal');
+      modal.style.display = 'none';
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+    }
+
+    document.getElementById('galleryModal').addEventListener('click', function(e) {
+      if (e.target === this) closeGallery();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeGallery();
+    });
+  </script>
+
+</body>
+</html>
