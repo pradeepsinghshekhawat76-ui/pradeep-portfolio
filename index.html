@@ -43,10 +43,12 @@
         <p>What I Do</p>
         <h2>Creative Services</h2>
       </div>
-      <div class="cards">
-        <article class="card"><span>01</span><h3>Motion Designer</h3><p>Dynamic animated visuals, typography, reels, ads and brand motion content.</p></article>
-        <article class="card"><span>02</span><h3>VFX Designer</h3><p>Cinematic effects, compositing, cleanup and impactful visual storytelling.</p></article>
-        <article class="card"><span>03</span><h3>Graphic Designer</h3><p>Social media creatives, posters, branding layouts and marketing designs.</p></article>
+      <div class="cards services-grid">
+        <article class="card"><span>01</span><h3>Social Media Management</h3><p>Building a strong digital presence through creative content, audience engagement, and data-driven social media strategies.</p></article>
+        <article class="card"><span>02</span><h3>Photography</h3><p>Capturing compelling visuals that tell your brand story and create lasting impressions.</p></article>
+        <article class="card"><span>03</span><h3>Meta Ads</h3><p>Performance-focused Facebook and Instagram advertising designed to maximize reach, leads, and ROI.</p></article>
+        <article class="card"><span>04</span><h3>Google Ads</h3><p>Smart Google advertising solutions that connect your business with customers actively searching for your services.</p></article>
+        <article class="card"><span>05</span><h3>E-commerce Marketing</h3><p>End-to-end marketing solutions to help online brands attract customers, boost conversions, and achieve sustainable growth.</p></article>
       </div>
     </section>
 
@@ -85,27 +87,23 @@
       </div>
       <div class="portfolio-grid">
         <button class="work" type="button" onclick="openGallery('social')">
-          <span>Social Media Design</span>
+          <span>Social Media Management</span>
           <small>Click to view 5 works</small>
         </button>
-        <button class="work" type="button" onclick="openGallery('motion')">
-          <span>Motion Graphics</span>
+        <button class="work" type="button" onclick="openGallery('photography')">
+          <span>Photography</span>
           <small>Click to view 5 works</small>
         </button>
-        <button class="work" type="button" onclick="openGallery('video')">
-          <span>Video Editing</span>
+        <button class="work" type="button" onclick="openGallery('metaads')">
+          <span>Meta Ads</span>
           <small>Click to view 5 works</small>
         </button>
-        <button class="work" type="button" onclick="openGallery('vfx')">
-          <span>VFX Compositing</span>
+        <button class="work" type="button" onclick="openGallery('googleads')">
+          <span>Google Ads</span>
           <small>Click to view 5 works</small>
         </button>
-        <button class="work" type="button" onclick="openGallery('realestate')">
-          <span>Real Estate Ads</span>
-          <small>Click to view 5 works</small>
-        </button>
-        <button class="work" type="button" onclick="openGallery('brand')">
-          <span>Brand Creatives</span>
+        <button class="work" type="button" onclick="openGallery('ecommerce')">
+          <span>E-commerce Marketing</span>
           <small>Click to view 5 works</small>
         </button>
       </div>
@@ -118,6 +116,37 @@
             <h3 id="galleryTitle">Selected Works</h3>
           </div>
           <div id="galleryImages" class="gallery-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="section video-section">
+      <div class="section-title">
+        <p>Video Portfolio</p>
+        <h2>MP4 Video Showcase</h2>
+      </div>
+      <div class="video-grid">
+        <button class="video-card" type="button" onclick="openVideo('videos/reel1.mp4')">
+          <img src="images/video-thumb-1.svg" alt="Video project 1 thumbnail">
+          <span class="play-icon">▶</span>
+          <h3>Reel Video 01</h3>
+        </button>
+        <button class="video-card" type="button" onclick="openVideo('videos/reel2.mp4')">
+          <img src="images/video-thumb-2.svg" alt="Video project 2 thumbnail">
+          <span class="play-icon">▶</span>
+          <h3>Reel Video 02</h3>
+        </button>
+        <button class="video-card" type="button" onclick="openVideo('videos/reel3.mp4')">
+          <img src="images/video-thumb-3.svg" alt="Video project 3 thumbnail">
+          <span class="play-icon">▶</span>
+          <h3>Reel Video 03</h3>
+        </button>
+      </div>
+
+      <div id="videoModal" class="video-modal" aria-hidden="true">
+        <div class="video-popup">
+          <button class="close-gallery" type="button" onclick="closeVideo()">&times;</button>
+          <video id="portfolioVideo" controls playsinline></video>
         </div>
       </div>
     </section>
@@ -151,28 +180,24 @@
   <script>
     const galleries = {
       social: {
-        title: 'Social Media Design',
+        title: 'Social Media Management',
         images: ['images/social-media-1.svg','images/social-media-2.svg','images/social-media-3.svg','images/social-media-4.svg','images/social-media-5.svg']
       },
-      motion: {
-        title: 'Motion Graphics',
-        images: ['images/motion-graphics-1.svg','images/motion-graphics-2.svg','images/motion-graphics-3.svg','images/motion-graphics-4.svg','images/motion-graphics-5.svg']
+      photography: {
+        title: 'Photography',
+        images: ['images/photography-1.svg','images/photography-2.svg','images/photography-3.svg','images/photography-4.svg','images/photography-5.svg']
       },
-      video: {
-        title: 'Video Editing',
-        images: ['images/video-editing-1.svg','images/video-editing-2.svg','images/video-editing-3.svg','images/video-editing-4.svg','images/video-editing-5.svg']
+      metaads: {
+        title: 'Meta Ads',
+        images: ['images/meta-ads-1.svg','images/meta-ads-2.svg','images/meta-ads-3.svg','images/meta-ads-4.svg','images/meta-ads-5.svg']
       },
-      vfx: {
-        title: 'VFX Compositing',
-        images: ['images/vfx-1.svg','images/vfx-2.svg','images/vfx-3.svg','images/vfx-4.svg','images/vfx-5.svg']
+      googleads: {
+        title: 'Google Ads',
+        images: ['images/google-ads-1.svg','images/google-ads-2.svg','images/google-ads-3.svg','images/google-ads-4.svg','images/google-ads-5.svg']
       },
-      realestate: {
-        title: 'Real Estate Ads',
-        images: ['images/real-estate-1.svg','images/real-estate-2.svg','images/real-estate-3.svg','images/real-estate-4.svg','images/real-estate-5.svg']
-      },
-      brand: {
-        title: 'Brand Creatives',
-        images: ['images/brand-creatives-1.svg','images/brand-creatives-2.svg','images/brand-creatives-3.svg','images/brand-creatives-4.svg','images/brand-creatives-5.svg']
+      ecommerce: {
+        title: 'E-commerce Marketing',
+        images: ['images/ecommerce-1.svg','images/ecommerce-2.svg','images/ecommerce-3.svg','images/ecommerce-4.svg','images/ecommerce-5.svg']
       }
     };
 
@@ -198,12 +223,40 @@
       document.body.classList.remove('modal-open');
     }
 
+    function openVideo(src) {
+      const modal = document.getElementById('videoModal');
+      const video = document.getElementById('portfolioVideo');
+      video.src = src;
+      modal.style.display = 'flex';
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+      video.play().catch(() => {});
+    }
+
+    function closeVideo() {
+      const modal = document.getElementById('videoModal');
+      const video = document.getElementById('portfolioVideo');
+      video.pause();
+      video.removeAttribute('src');
+      video.load();
+      modal.style.display = 'none';
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+    }
+
+    document.getElementById('videoModal').addEventListener('click', function(e) {
+      if (e.target === this) closeVideo();
+    });
+
     document.getElementById('galleryModal').addEventListener('click', function(e) {
       if (e.target === this) closeGallery();
     });
 
     document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeGallery();
+      if (e.key === 'Escape') {
+        closeGallery();
+        closeVideo();
+      }
     });
   </script>
 
