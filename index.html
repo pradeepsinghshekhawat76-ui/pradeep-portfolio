@@ -107,6 +107,18 @@
           <span>E-commerce Marketing</span>
           <small>Click to view 5 works</small>
         </button>
+        <button class="work video-work" type="button" onclick="openVideo('videos/sunpro-builder.mp4')">
+          <span>Sunpro Builder</span>
+          <small>Click to play video</small>
+        </button>
+        <button class="work video-work" type="button" onclick="openVideo('videos/dr-yash-tesar.mp4')">
+          <span>Dr. Yash Tesar</span>
+          <small>Click to play video</small>
+        </button>
+        <button class="work video-work" type="button" onclick="openVideo('videos/my-square-feet.mp4')">
+          <span>My Square Feet</span>
+          <small>Click to play video</small>
+        </button>
       </div>
 
       <div id="galleryModal" class="gallery-modal" aria-hidden="true">
@@ -117,37 +129,6 @@
             <h3 id="galleryTitle">Selected Works</h3>
           </div>
           <div id="galleryImages" class="gallery-grid"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="videos" class="section video-section">
-      <div class="section-title">
-        <p>Video Portfolio</p>
-        <h2>MP4 Video Showcase</h2>
-      </div>
-      <div class="video-grid">
-        <button class="video-card" type="button" onclick="openVideo('videos/sunpro-builder.mp4')">
-          <img src="images/video-thumb-1.svg" alt="Video project 1 thumbnail">
-          <span class="play-icon">▶</span>
-          <h3>Sunpro Builder</h3>
-        </button>
-        <button class="video-card" type="button" onclick="openVideo('videos/dr-yash-tesar.mp4')">
-          <img src="images/video-thumb-2.svg" alt="Video project 2 thumbnail">
-          <span class="play-icon">▶</span>
-          <h3>Dr. Yash Tesar</h3>
-        </button>
-        <button class="video-card" type="button" onclick="openVideo('videos/my-square-feet.mp4')">
-          <img src="images/video-thumb-3.svg" alt="Video project 3 thumbnail">
-          <span class="play-icon">▶</span>
-          <h3>My Square Feet</h3>
-        </button>
-      </div>
-
-      <div id="videoModal" class="video-modal" aria-hidden="true">
-        <div class="video-popup">
-          <button class="close-gallery" type="button" onclick="closeVideo()">&times;</button>
-          <video id="portfolioVideo" controls playsinline></video>
         </div>
       </div>
     </section>
