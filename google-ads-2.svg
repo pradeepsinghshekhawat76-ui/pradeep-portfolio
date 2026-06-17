@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1125" viewBox="0 0 900 1125">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#07162e"/><stop offset="1" stop-color="#00aaff"/></linearGradient></defs>
+  <rect width="900" height="1125" rx="42" fill="url(#g)"/>
+  <circle cx="720" cy="170" r="130" fill="#ffffff" opacity="0.12"/>
+  <circle cx="140" cy="920" r="220" fill="#ffffff" opacity="0.08"/>
+  <rect x="80" y="110" width="740" height="900" rx="38" fill="#050914" opacity="0.58" stroke="#ffffff" stroke-opacity="0.22"/>
+  <text x="110" y="210" fill="#00d4ff" font-family="Arial" font-size="34" font-weight="700">Portfolio Work</text>
+  <text x="110" y="320" fill="#ffffff" font-family="Arial" font-size="70" font-weight="800">Google Ads</text>
+  <text x="110" y="420" fill="#dbe7ff" font-family="Arial" font-size="52" font-weight="700">Sample 02</text>
+  <rect x="110" y="660" width="300" height="18" rx="9" fill="#00d4ff"/>
+  <rect x="110" y="710" width="560" height="18" rx="9" fill="#ffffff" opacity="0.5"/>
+  <rect x="110" y="760" width="430" height="18" rx="9" fill="#ffffff" opacity="0.35"/>
+</svg>
