@@ -17,6 +17,7 @@
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#portfolio">Works</a>
+      <a href="#video-projects">Videos</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -107,18 +108,6 @@
           <span>E-commerce Marketing</span>
           <small>Click to view 5 works</small>
         </button>
-        <button class="work video-work" type="button" onclick="openVideo('videos/sunpro-builder.mp4')">
-          <span>Sunpro Builder</span>
-          <small>Click to play video</small>
-        </button>
-        <button class="work video-work" type="button" onclick="openVideo('videos/dr-yash-tesar.mp4')">
-          <span>Dr. Yash Tesar</span>
-          <small>Click to play video</small>
-        </button>
-        <button class="work video-work" type="button" onclick="openVideo('videos/my-square-feet.mp4')">
-          <span>My Square Feet</span>
-          <small>Click to play video</small>
-        </button>
       </div>
 
       <div id="galleryModal" class="gallery-modal" aria-hidden="true">
@@ -132,6 +121,37 @@
         </div>
       </div>
     </section>
+
+    <section id="video-projects" class="section video-projects">
+      <div class="section-title">
+        <p>Videos</p>
+        <h2>Video Projects</h2>
+      </div>
+      <div class="video-grid">
+        <button class="video-card" type="button" onclick="openVideo('videos/sunpro-builder.mp4')">
+          <img src="images/video-thumb-1.svg" alt="Sunpro Builder video thumbnail">
+          <span class="play-icon">▶</span>
+          <h3>Sunpro Builder</h3>
+        </button>
+        <button class="video-card" type="button" onclick="openVideo('videos/dr-yash-tesar.mp4')">
+          <img src="images/video-thumb-2.svg" alt="Dr. Yash Tesar video thumbnail">
+          <span class="play-icon">▶</span>
+          <h3>Dr. Yash Tesar</h3>
+        </button>
+        <button class="video-card" type="button" onclick="openVideo('videos/my-square-feet.mp4')">
+          <img src="images/video-thumb-3.svg" alt="My Square Feet video thumbnail">
+          <span class="play-icon">▶</span>
+          <h3>My Square Feet</h3>
+        </button>
+      </div>
+    </section>
+
+    <div id="videoModal" class="video-modal" aria-hidden="true">
+      <div class="video-popup">
+        <button class="close-gallery" type="button" onclick="closeVideo()">&times;</button>
+        <video id="portfolioVideo" controls playsinline></video>
+      </div>
+    </div>
 
     <section class="section faq">
       <div class="section-title">
